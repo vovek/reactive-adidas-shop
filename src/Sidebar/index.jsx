@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Logo from './Logo';
+import SearchForm from './SearchForm';
 
 const Wrapper = styled.aside`
   width: 100%;
@@ -27,5 +28,6 @@ const Wrapper = styled.aside`
 export default () => (
   <Wrapper>
     <Logo />
+    <SearchForm />
   </Wrapper>
 );
