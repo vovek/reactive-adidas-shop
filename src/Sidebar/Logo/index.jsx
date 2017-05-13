@@ -5,13 +5,9 @@ import logo from './logo.svg';
 const Logo = styled.img`
   height: 100%;
 
-  @media only screen and (min-width: 764px) {
+  @media only screen and (min-width: 768px) {
     height: 3rem;
   }
 `;
 
-export default () => (
-  <a href="#" alt="Adidas">
-    <Logo src={logo} />
-  </a>
-);
+export default () => <Logo src={logo} />;
