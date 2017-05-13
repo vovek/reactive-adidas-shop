@@ -12,7 +12,7 @@ const Layout = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  font-family: avenir;
+  font-family: avenir-next;
 
   @media only screen and (min-width: 764px) {
     flex-direction: row;
