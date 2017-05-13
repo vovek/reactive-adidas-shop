@@ -1,0 +1,9 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Vertical rhyth */
+html {
+  font-size: 24px;
+  line-height: 36px;
+}
