@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Logo from './Logo';
 import SearchForm from './SearchForm';
+import Menu from './Menu';
 
 const Wrapper = styled.aside`
   width: 100%;
@@ -29,5 +30,6 @@ export default () => (
   <Wrapper>
     <Logo />
     <SearchForm />
+    <Menu />
   </Wrapper>
 );
