@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,9 +13,7 @@ const Layout = styled.div`
 
 class App extends Component {
   render() {
-    return (
-      <Layout />
-    );
+    return <Layout />;
   }
 }
 
