@@ -16,13 +16,13 @@ const Wrapper = styled.aside`
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 327px;
-    height: 100vh;
+    flex: 0 1 327px;
+    height: auto;
     padding: 1.5rem 1rem;
   }
 
   @media only screen and (min-width: 992px) {
-    flex: 0 0 414px;
+    flex: 0 1 414px;
   }
 `;
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Filter from './Filter';
+import ProductsList from './ProductsList';
 
 const Wrapper = styled.section`
   display: flex;
@@ -12,5 +13,6 @@ const Wrapper = styled.section`
 export default () => (
   <Wrapper>
     <Filter />
+    <ProductsList />
   </Wrapper>
 );

@@ -8,7 +8,7 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: avenir-next;
 
   @media only screen and (min-width: 768px) {

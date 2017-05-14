@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { GenderFilter, SizeFilter, Button, Icon, Label } from './styled';
+import filterImage from './filter.png';
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <GenderFilter>
-      <Icon src={require('./filter.png')} />
+      <Icon src={filterImage} />
       <Button isActive>Man</Button>
       <Button>Woman</Button>
     </GenderFilter>
