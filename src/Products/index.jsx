@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Filter from './Filter';
-import ProductsList from './ProductsList';
+import Filters from './Filters';
+import List from './List';
 
 const Wrapper = styled.section`
   display: flex;
@@ -12,7 +12,7 @@ const Wrapper = styled.section`
 
 export default () => (
   <Wrapper>
-    <Filter />
-    <ProductsList />
+    <Filters />
+    <List />
   </Wrapper>
 );
