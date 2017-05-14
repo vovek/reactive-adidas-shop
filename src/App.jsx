@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import Sidebar from './Sidebar';
@@ -15,14 +15,12 @@ const Layout = styled.div`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Layout>
-        <Sidebar />
-      </Layout>
-    );
-  }
+function App() {
+  return (
+    <Layout>
+      <Sidebar />
+    </Layout>
+  );
 }
 
 export default App;
