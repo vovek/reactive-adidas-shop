@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import 'normalize.css';
-import './assets/css/fonts.css';
-import './assets/css/style.css';
-
 import Sidebar from './Sidebar';
 
 const Layout = styled.div`
