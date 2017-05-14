@@ -2,9 +2,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import App from './App';
-
-import '../node_modules/normalize.css/normalize.css';
-import './assets/css/fonts.css';
+import './css/fonts.css';
+import './css/style.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
