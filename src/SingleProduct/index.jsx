@@ -80,7 +80,8 @@ export default () => (
       <p>
         <span>Adidas</span>
         {' '}
-        is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
+        is a German multinational corporation, headquartered in Herzogenaurach, Germany,
+        that designs and manufactures shoes, clothing and accessories.
       </p>
       <BuyButton>Buy now</BuyButton>
     </ProductDescription>
