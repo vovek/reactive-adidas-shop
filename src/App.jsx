@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Products from './Products';
+import SingleProduct from './SingleProduct';
 
 const Layout = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ function App() {
       <Layout>
         <Sidebar />
         <Route exact path="/" component={Products} />
+        <Route path="/item" component={SingleProduct} />
       </Layout>
     </Router>
   );

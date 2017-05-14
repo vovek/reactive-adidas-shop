@@ -18,6 +18,6 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Image src={productImage} />
-    <Price href="/" onSale>$170</Price>
+    <Price href="/item" onSale>$170</Price>
   </Wrapper>
 );
