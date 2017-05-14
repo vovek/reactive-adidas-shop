@@ -31,6 +31,11 @@ export const Button = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   padding: 0;
+  font-family: avenir-next;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 0;
+  cursor: pointer;
   &:focus {
     outline: 0;
   }
