@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Products from './Products';
+import SingleProduct from './SingleProduct';
 
 const Layout = styled.div`
   display: flex;
@@ -18,10 +19,13 @@ const Layout = styled.div`
 
 function App() {
   return (
-    <Layout>
-      <Sidebar />
-      <Products />
-    </Layout>
+    <Router>
+      <Layout>
+        <Sidebar />
+        <Route exact path="/" component={Products} />
+        <Route path="/item" component={SingleProduct} />
+      </Layout>
+    </Router>
   );
 }
 
