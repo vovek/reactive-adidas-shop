@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { LabelLayout } from '../../../components/SaleLabel';
 
 export const Image = styled.img`
   width: 100%;
@@ -27,3 +28,11 @@ export const Price = styled(Link)`
     color: #fff;
 }
 `;
+
+export const Label = styled(LabelLayout)`
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0 1rem;
+  `;

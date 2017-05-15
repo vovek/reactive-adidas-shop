@@ -3,9 +3,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SaleLabel from '../../../components/SaleLabel';
 import productImage from './shoes.jpg';
-import { Image, Price } from './styled';
+import { Image, Price, Label } from './styled';
+import SaleLabel from '../../../components/SaleLabel';
 
 const Wrapper = styled.div`
   position: relative;
@@ -17,17 +17,12 @@ const Wrapper = styled.div`
   padding: 9px;
   margin-bottom: 1em;
   position: relative;
-  > span {
-    width: auto
-    position: absolute;
-    top: 10px;
-    right: 10px;
   }
 `;
 
 export default props => (
   <Wrapper>
-    {props.onSale && <SaleLabel />}
+    {props.onSale && <Label><SaleLabel /></Label>}
     <Image src={productImage} />
     <Price to="/item" onSale>$170</Price>
   </Wrapper>
