@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import productImage from './shoes.jpg';
 import { Image, Price, Label } from './styled';
-import SaleLabel from '../../../components/SaleLabel';
+import SaleLabel from '../../../../components/SaleLabel';
 
 const Wrapper = styled.div`
   position: relative;

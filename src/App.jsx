@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import Products from './Products';
-import SingleProduct from './SingleProduct';
+import Products from './Products/List';
+import SingleProduct from './Products/Show';
 
 const Layout = styled.div`
   display: flex;

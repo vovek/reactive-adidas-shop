@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SaleLabel, { LabelLayout } from '../../../components/SaleLabel';
+import SaleLabel, { LabelLayout } from '../../../../components/SaleLabel';
 import ColorSwitcher from './ColorSwitcher';
 import Price from './Price';
 

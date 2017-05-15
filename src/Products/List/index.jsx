@@ -1,58 +1,19 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
-import Card from './Card';
 
-const CardColumn = ({ children }) => (
-  <Col xs={12} sm={6} md={4} lg={3}>
-    {children}
-  </Col>
-);
+import Filters from './Filters';
+import Grid from './Grid';
 
-const Wrapper = styled.div`
-  padding: 0.75rem 0.8rem;
-  margin-left: auto;
-  margin-right: auto;
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
 `;
 
 export default () => (
   <Wrapper>
-    <Row>
-      <CardColumn>
-        <Card isSale />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-      <CardColumn>
-        <Card />
-      </CardColumn>
-    </Row>
+    <Filters />
+    <Grid />
   </Wrapper>
 );
