@@ -14,7 +14,7 @@ export const MainMenu = styled.nav`
 export const Link = styled.a`
   font-weight: ${props => (props.isSubLink ? 'normal' : 'bold')};
   font-family: ${props => (props.isSubLink ? 'andale-mono' : 'avenir-next')};
-  color: #303030;
+  color: ${props => (props.isActive ? '#fff' : '#3c3c3c')};
   outline: 0;
   padding: 0.3em 0;
   &:hover,
