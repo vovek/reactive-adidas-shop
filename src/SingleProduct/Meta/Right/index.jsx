@@ -10,10 +10,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-end;
   z-index: 9;
-  > div {
-    display: flex;
-    align-items: center;
-  }
 `;
 
 const Label = styled(LabelLayout)`
@@ -23,10 +19,9 @@ const Label = styled(LabelLayout)`
 
 export default () => (
   <Wrapper>
-    <div>
-      <ColorSwitcher colors={['red', 'blue', 'green', 'black', 'yellow']} />
+    <ColorSwitcher colors={['red', 'blue', 'green', 'black', 'yellow']}>
       <Label><SaleLabel /></Label>
-    </div>
+    </ColorSwitcher>
     <Price>$170</Price>
   </Wrapper>
 );
