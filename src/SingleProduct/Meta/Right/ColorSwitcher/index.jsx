@@ -11,10 +11,12 @@ const Wrapper = styled.div`
 
 export default (props) => {
   const colors = props.colors;
-  const Switchers = colors.map(color => <SwitchButton color={color} />);
+  const switchers = colors.map((id, color) => (
+    <SwitchButton key={id} color={color} />
+  ));
   return (
     <Wrapper>
-      {Switchers}
+      {switchers}
     </Wrapper>
   );
 };
