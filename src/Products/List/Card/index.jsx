@@ -24,6 +24,6 @@ export default props => (
   <Wrapper>
     {props.onSale && <Label><SaleLabel /></Label>}
     <Image src={productImage} />
-    <Price to="/item" onSale>$170</Price>
+    <Price to="/item">$170</Price>
   </Wrapper>
 );

@@ -12,7 +12,7 @@ const CardColumn = ({ children }) => (
 );
 
 const Wrapper = styled.div`
-  padding: 0.75rem;
+  padding: 0.75rem 0.8rem;
   margin-left: auto;
   margin-right: auto;
 `;
