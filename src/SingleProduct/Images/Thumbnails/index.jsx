@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import thumb from './product-thumb1.jpg';
-import { Thumbnail, Separator, SeeMore } from './styled';
+import { Thumbnail, Separator, SeparatorItem, SeeMore } from './styled';
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,9 +19,9 @@ export default () => (
     <Thumbnail src={thumb} />
     <Thumbnail src={thumb} />
     <Separator>
-      <hr />
-      <hr />
-      <hr />
+      <SeparatorItem />
+      <SeparatorItem />
+      <SeparatorItem />
     </Separator>
     <SeeMore>See<br />more<br />photos</SeeMore>
   </Wrapper>

@@ -8,13 +8,14 @@ export const Thumbnail = styled.img`
 
 export const Separator = styled.div`
   overflow: hidden;
-  > hr {
-    width: 150px;
-    border: 0;
-    height: 3px;
-    background-color: #c0c0c0;
-    margin: 0.3rem
-  }
+`;
+
+export const SeparatorItem = styled.div`
+  width: 150px;
+  border: 0;
+  height: 3px;
+  background-color: #c0c0c0;
+  margin: 0.3rem
 `;
 
 export const SeeMore = styled.button`
