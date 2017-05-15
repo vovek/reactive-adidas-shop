@@ -23,6 +23,6 @@ export default () => (
       <hr />
       <hr />
     </Separator>
-    <SeeMore href="/">See<br />more<br />photos</SeeMore>
+    <SeeMore>See<br />more<br />photos</SeeMore>
   </Wrapper>
 );

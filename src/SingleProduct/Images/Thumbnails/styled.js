@@ -17,8 +17,12 @@ export const Separator = styled.div`
   }
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   font-size: 0.5rem;
   line-height: 1.5;
   color: #c0c0c0;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  text-align: left;
 `;

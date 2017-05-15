@@ -22,8 +22,8 @@ const Wrapper = styled.div`
 
 export default props => (
   <Wrapper>
-    {props.onSale && <Label><SaleLabel /></Label>}
+    {props.isSale && <Label><SaleLabel /></Label>}
     <Image src={productImage} />
-    <Price to="/item">$170</Price>
+    <Price to="/item" isSale>$170</Price>
   </Wrapper>
 );

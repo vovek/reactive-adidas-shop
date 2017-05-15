@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 
 export default (props) => {
   const colors = props.colors;
-  console.log(colors);
   const switchers = colors.map(color => (
     <SwitchButton key={color.toString()} color={color} />
   ));
