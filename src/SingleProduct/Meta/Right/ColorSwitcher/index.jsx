@@ -7,11 +7,12 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-export default () => (
-  <Wrapper>
-    <SwitchButton color="red" />
-    <SwitchButton color="blue" />
-    <SwitchButton color="green" />
-    <SwitchButton color="black" />
-  </Wrapper>
-);
+export default (props) => {
+  const colors = props.colors;
+  const Switchers = colors.map(color => <SwitchButton color={color} />);
+  return (
+    <Wrapper>
+      {Switchers}
+    </Wrapper>
+  );
+};
