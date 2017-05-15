@@ -1,4 +1,3 @@
-
 /* eslint-disable react/prop-types */
 
 import React from 'react';
@@ -9,7 +8,7 @@ import productImage from './shoes.jpg';
 import { Image, Price } from './styled';
 
 const Wrapper = styled.div`
-  position: relative
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 1rem;
