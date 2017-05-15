@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Image = styled.img`
   width: 100%;
 `;
 
-export const Price = styled.a`
+export const Price = styled(Link)`
   color: #000;
   font-size: 1.25rem;
   font-weight: bold;
