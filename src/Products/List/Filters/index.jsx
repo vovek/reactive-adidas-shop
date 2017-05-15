@@ -7,9 +7,9 @@ import Size from './Size';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  
+  margin-bottom: 1rem;
   font-weight: bold;
-  padding: 0.75em 0.8em;
+  padding: 0.75em 0;
   border-bottom: 3px solid #e7e7e7;
 
   @media only screen and (min-width: 768px) {

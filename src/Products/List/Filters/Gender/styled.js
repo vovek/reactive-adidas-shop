@@ -11,9 +11,9 @@ export const Wrapper = styled.div`
 
 export const Icon = styled.img`
   display: none;
-  width: 2.25em;
-  height: 2.292em;
-  padding: 0.458em 0.292em;
+  width: 55px;
+  height: 55px;
+  padding: 0.5em 0.3em;
 
   @media only screen and (min-width: 768px) {
     display: inline-block;

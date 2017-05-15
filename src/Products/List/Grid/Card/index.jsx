@@ -1,10 +1,14 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react';
 import styled from 'styled-components';
 
-import { Image, Price } from './styled';
 import productImage from './shoes.jpg';
+import { Image, Price, Label } from './styled';
+import SaleLabel from '../../../../components/SaleLabel';
 
 const Wrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 1rem;
@@ -13,11 +17,13 @@ const Wrapper = styled.div`
   padding: 9px;
   margin-bottom: 1em;
   position: relative;
+  }
 `;
 
-export default () => (
+export default props => (
   <Wrapper>
+    {props.isSale && <Label><SaleLabel /></Label>}
     <Image src={productImage} />
-    <Price href="/item" onSale>$170</Price>
+    <Price to="/item" isSale>$170</Price>
   </Wrapper>
 );

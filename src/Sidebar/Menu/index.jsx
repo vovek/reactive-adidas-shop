@@ -4,7 +4,7 @@ import { MainMenu, SubMenu, Link } from './styled-components';
 
 export default () => (
   <MainMenu>
-    <Link href="">Sports</Link>
+    <Link href="" isActive>Sports</Link>
     <SubMenu>
       <Link isSubLink href="">Shoes</Link>
       <Link isSubLink href="">Clothing</Link>
