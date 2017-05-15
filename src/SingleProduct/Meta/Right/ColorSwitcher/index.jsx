@@ -9,8 +9,7 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-export default (props) => {
-  const colors = props.colors;
+export default ({ colors }) => {
   const switchers = colors.map(color => (
     <SwitchButton key={color.toString()} color={color} />
   ));
