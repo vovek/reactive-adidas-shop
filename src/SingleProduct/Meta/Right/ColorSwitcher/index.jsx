@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { SwitchButton } from './styled';
+import SwitchButton from './styled';
 
 const Wrapper = styled.div`
   display: flex;
 `;
 
-export default props => (
+export default () => (
   <Wrapper>
     <SwitchButton color="red" />
     <SwitchButton color="blue" />

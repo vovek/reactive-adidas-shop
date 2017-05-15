@@ -21,7 +21,7 @@ export default () => (
   <Wrapper>
     <Row>
       <CardColumn>
-        <Card />
+        <Card onSale />
       </CardColumn>
       <CardColumn>
         <Card />

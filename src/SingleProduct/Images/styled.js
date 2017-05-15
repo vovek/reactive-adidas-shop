@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const MainImage = styled.img`
+const MainImage = styled.img`
   width: 80%;
   height: auto;
 `;
+
+export default MainImage;

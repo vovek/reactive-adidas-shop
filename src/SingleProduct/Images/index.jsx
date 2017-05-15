@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Thumbnails from './Thumbnails';
-import { MainImage } from './styled';
+import MainImage from './styled';
 import img from './big-image.jpg';
 
 const Wrapper = styled.div`

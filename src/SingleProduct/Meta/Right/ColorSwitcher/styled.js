@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SwitchButton = styled.button`
+const SwitchButton = styled.button`
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -16,3 +16,5 @@ export const SwitchButton = styled.button`
     outline: 0;
   }
 `;
+
+export default SwitchButton;
