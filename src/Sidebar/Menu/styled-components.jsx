@@ -17,6 +17,24 @@ export const Link = styled.a`
   color: ${props => (props.isActive ? '#fff' : '#3c3c3c')};
   outline: 0;
   padding: 0.3em 0;
+  ${props => props.isActive && `
+    position: relative;
+    padding-right: 20px;
+    color: #fff;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #fff;
+      border-left: none;
+      border-top: none;
+      border-radius: 3px;
+      transform: rotate(45deg);
+      transition-duration: .2s;
+  `};
   &:hover,
   &:focus
   {

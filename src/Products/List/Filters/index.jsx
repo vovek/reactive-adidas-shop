@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin-bottom: 1rem;
   font-weight: bold;
-  padding: 0.75em 0;
+  padding: 0.3em 1rem;
   border-bottom: 3px solid #e7e7e7;
 
   @media only screen and (min-width: 768px) {

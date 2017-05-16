@@ -7,6 +7,7 @@ const Button = styled.button`
   left:0;
   right: 0;
   text-align: center;
+  text-transform: uppercase;
   background: linear-gradient(to right, #4949aa, #27275d);
   font-size: 32px;
   color: #fff;

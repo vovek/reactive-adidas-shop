@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import productImage from './shoes.jpg';
 import { Image, Price, Label } from './styled';
 import SaleLabel from '../../../../components/SaleLabel';
@@ -21,9 +21,11 @@ const Wrapper = styled.div`
 `;
 
 export default props => (
-  <Wrapper>
-    {props.isSale && <Label><SaleLabel /></Label>}
-    <Image src={productImage} />
-    <Price to="/item" isSale>$170</Price>
-  </Wrapper>
+  <Link to="/item">
+    <Wrapper>
+      {props.isSale && <Label><SaleLabel /></Label>}
+      <Image src={productImage} />
+      <Price to="/item" isSale>$170</Price>
+    </Wrapper>
+  </Link>
 );

@@ -8,6 +8,7 @@ const Wrapper = styled.p`
   line-height: 1.5;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  text-transform: none;
   font-weight: normal;
   color: #d8d8d8;
   & > span {

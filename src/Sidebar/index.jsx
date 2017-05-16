@@ -21,9 +21,10 @@ const Wrapper = styled.aside`
     padding: 1.5rem 1rem;
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1200px) {
     flex: 0 0 414px;
   }
+  
 `;
 
 export default () => (

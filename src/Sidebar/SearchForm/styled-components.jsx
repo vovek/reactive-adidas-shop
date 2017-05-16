@@ -19,7 +19,9 @@ export const Input = styled.input`
   text-transform: uppercase;
   font-size: 1rem;
   padding-left: 2em;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+  line-height: 32px;
+  font-size: 32px;
   @media only screen and (min-width: 768px) {
     display: block;
   }
