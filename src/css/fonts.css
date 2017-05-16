@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'andale-mono';
+  font-weight: normal;
+  src: url('../../public/fonts/andale-mono/andale-mono.eot');
+  src: url('../../public/fonts/andale-mono/andale-mono.woff2') format('woff2'),
+  url('../../public/fonts/andale-mono/andale-mono.woff') format('woff'),
+  url('../../public/fonts/andale-mono/andale-mono.ttf') format('truetype'),
+  url('../../public/fonts/andale-mono/andale-mono.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: normal;
+  src: url('../../public/fonts/avenir-next-regular/avenir-next-regular.eot');
+  src: url('../../public/fonts/avenir-next-regular/avenir-next-regular.woff') format('woff'),
+  url('../../public/fonts/avenir-next-regular/avenir-next-regular.ttf') format('truetype'),
+  url('../../public/fonts/avenir-next-regular/avenir-next-regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: bold;
+  src: url('../../public/fonts/avenir-next-bold/avenir-next-bold.eot');
+  src: url('../../public/fonts/avenir-next-bold/avenir-next-bold.woff') format('woff'),
+  url('../../public/fonts/avenir-next-bold/avenir-next-bold.ttf') format('truetype'),
+  url('../../public/fonts/avenir-next-bold/avenir-next-bold.svg#svgFontName') format('svg');
+}
