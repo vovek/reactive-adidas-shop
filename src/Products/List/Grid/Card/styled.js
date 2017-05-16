@@ -20,7 +20,7 @@ export const Price = styled.span`
 export const Label = styled(LabelLayout)`
   width: auto;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 18px;
+  right: 18px;
   padding: 0 1rem;
   `;
