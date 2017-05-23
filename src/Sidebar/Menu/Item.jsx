@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
@@ -84,6 +85,6 @@ export default class Item extends React.Component {
         </Button>
         {this.state.isOpened && this.props.children}
       </Wrapper>
-    )
+    );
   }
 }
