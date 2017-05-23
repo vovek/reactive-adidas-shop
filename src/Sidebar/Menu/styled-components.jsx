@@ -40,7 +40,9 @@ export const Link = styled.a`
   {
       color: #fff;
   }
-
+  &::last-child {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const SubMenu = styled.nav`
