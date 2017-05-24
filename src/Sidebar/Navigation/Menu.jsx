@@ -38,23 +38,26 @@ const Button = styled.button`
   }
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const Link = styled(NavLink)`
   font-weight: normal;
   font-family: andale-mono;
   text-transform: uppercase;
   color: #3c3c3c;
+  &:focus {
+    outline: 0;
+  }
   &:hover {
     color: #fff;
   }
   &:last-child {
     margin-bottom: 3rem;
   }
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export default class Item extends React.Component {
