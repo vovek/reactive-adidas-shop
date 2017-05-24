@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Thumbnails from './Thumbnails';
-import MainImage from './styled';
 import img from './big-image.jpg';
 
 const Wrapper = styled.div`
@@ -11,6 +10,11 @@ const Wrapper = styled.div`
   align-items: center;
 
   width: 100%;
+`;
+
+const MainImage = styled.img`
+  width: 80%;
+  height: auto;
 `;
 
 export default () => (

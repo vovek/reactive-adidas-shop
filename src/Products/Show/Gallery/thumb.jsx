@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import thumb from './product-thumb1.jpg';
-import { Thumbnail, Separator, SeparatorItem, SeeMore } from './styled';
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,17 +12,17 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const Thumbnail = styled.img`
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+`;
+
 export default () => (
   <Wrapper>
     <Thumbnail src={thumb} />
     <Thumbnail src={thumb} />
     <Thumbnail src={thumb} />
     <Thumbnail src={thumb} />
-    <Separator>
-      <SeparatorItem />
-      <SeparatorItem />
-      <SeparatorItem />
-    </Separator>
-    <SeeMore>See<br />more<br />photos</SeeMore>
   </Wrapper>
 );
