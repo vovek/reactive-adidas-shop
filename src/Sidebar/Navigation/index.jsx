@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /*  import { MainMenu, SubMenu, Link } from './styled-components';*/
-import Item, { Link } from './Item';
-
+import Menu, { Link } from './Menu';
 
 export const Wrapper = styled.nav`
   display: none;
@@ -16,23 +15,22 @@ export const Wrapper = styled.nav`
   }
 `;
 
-
 export default () => (
   <Wrapper>
-    <Item title="Football">
+    <Menu title="Football">
       <Link to="/" isSubLink href="">Shoes</Link>
       <Link to="/" isSubLink href="">Clothing</Link>
       <Link to="/" isSubLink href="">Accessories</Link>
-    </Item>
-    <Item title="Running">
+    </Menu>
+    <Menu title="Running">
       <Link to="/" isSubLink href="">Shoes</Link>
       <Link to="/" isSubLink href="">Clothing</Link>
       <Link to="/" isSubLink href="">Accessories</Link>
-    </Item>
-    <Item title="Basketball">
+    </Menu>
+    <Menu title="Basketball">
       <Link to="/" isSubLink href="">Shoes</Link>
       <Link to="/" isSubLink href="">Clothing</Link>
       <Link to="/" isSubLink href="">Accessories</Link>
-    </Item>
+    </Menu>
   </Wrapper>
 );
