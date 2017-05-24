@@ -10,14 +10,13 @@ const Button = styled.button`
   font-weight: bold;
   line-height: 1.5;
   font-family: avenir-next;
-  color: ${props => (props.isActive ? '#fff' : '#3c3c3c')};
+  color: #fff;
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
   border: 0;
-  outline: 0;
-  &:hover {
-    color: #fff;
+  &:focus {
+    outline: 0;
   }
   &:after {
     content: '';
@@ -30,16 +29,13 @@ const Button = styled.button`
     border-left: none;
     border-top: none;
     border-radius: 3px;
+    border-color: #fff;
     transform: rotate(45deg);
     transition-duration: .1s;
-  }
-  ${props => props.isOpened && `
-    color: #fff;
-    &:after {
-      border-color: #fff;
+    ${props => props.isOpened && `
       transform: rotate(225deg);
-    }
-  `}
+    `}
+  }
 `;
 
 export const Link = styled(NavLink)`
@@ -61,7 +57,6 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-
 export default class Item extends React.Component {
   constructor(props) {
     super(props);
@@ -77,10 +72,7 @@ export default class Item extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Button
-          onClick={this.handleClick}
-          isOpened={this.state.isOpened}
-        >
+        <Button onClick={this.handleClick} isOpened={this.state.isOpened}>
           {this.props.title}
         </Button>
         {this.state.isOpened && this.props.children}
