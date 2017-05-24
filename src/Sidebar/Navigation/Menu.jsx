@@ -68,9 +68,7 @@ export default class Item extends React.Component {
   }
 
   handleClick() {
-    this.setState({
-      isOpened: !this.state.isOpened,
-    });
+    this.setState(prevState => ({ isOpened: !prevState.isOpened }));
   }
   render() {
     return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-/*  import { MainMenu, SubMenu, Link } from './styled-components';*/
 import Menu, { Link } from './Menu';
 
 export const Wrapper = styled.nav`
