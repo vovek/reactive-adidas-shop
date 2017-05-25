@@ -1,7 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable global-require */
-/* eslint-disable import/no-dynamic-require */
-
 import React from 'react';
 import styled from 'styled-components';
 
