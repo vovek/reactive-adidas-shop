@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -21,9 +25,9 @@ const Thumbnail = styled.img`
 
 export default props => (
   <Wrapper>
-    {props.data.map((image, index) => (
+    {props.data.map(image => (
       <Thumbnail
-        key={index}
+        key={image.id}
         src={require(image.src)}
         onClick={() => props.changeImage(image.id)}
       />

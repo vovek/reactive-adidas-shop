@@ -1,3 +1,6 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -36,7 +39,11 @@ export default class Gallery extends React.Component {
     return (
       <Wrapper>
         <MainImage src={require(images[this.state.currentIndex].src)} />
-        <Thumbnails data={images} changeImage={this.changeImage} />
+        <Thumbnails
+          data={images}
+          changeImage={this.changeImage}
+          currentIndex={this.state.currentIndex}
+        />
       </Wrapper>
     );
   }
