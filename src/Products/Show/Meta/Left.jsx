@@ -1,12 +1,17 @@
+import React from 'react';
 import styled from 'styled-components';
 
-export const Title = styled.h1`
+const Wrapper = styled.div`
+  z-index: 9;
+`;
+
+const Title = styled.h1`
   font-size: 3rem;
   line-height: 3rem;
   margin: 0;
 `;
 
-export const SaveButton = styled.button`
+const SaveButton = styled.button`
   color: #fff;
   font-family: avenir-next;
   font-weight: bold;
@@ -25,3 +30,10 @@ export const SaveButton = styled.button`
     outline:0;
   }
 `;
+
+export default () => (
+  <Wrapper>
+    <Title>Easy<br />Boost</Title>
+    <SaveButton>Save</SaveButton>
+  </Wrapper>
+);
