@@ -1,5 +1,9 @@
 {
   "extends": "airbnb",
+  "rules": {
+    "react/prop-types": 0,
+    "global-require": 0
+  },
   "env": {
     "browser": true,
     "jest": true

@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Wrapper from './styled';

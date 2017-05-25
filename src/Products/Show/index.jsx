@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Meta from './Meta';
-import Images from './Images';
+import Gallery from './Gallery';
 import Description from './Description';
 import BuyButton from './BuyButton';
 
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Meta />
-    <Images />
+    <Gallery />
     <Description>
       <span>Adidas</span>
       {' '}
