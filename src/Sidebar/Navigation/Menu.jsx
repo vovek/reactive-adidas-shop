@@ -60,7 +60,7 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export default class Item extends React.Component {
+export default class Menu extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isOpened: false };
@@ -70,6 +70,7 @@ export default class Item extends React.Component {
   handleClick() {
     this.setState(prevState => ({ isOpened: !prevState.isOpened }));
   }
+
   render() {
     return (
       <Wrapper>
