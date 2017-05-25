@@ -18,30 +18,30 @@ const MainImage = styled.img`
 `;
 
 const images = [
-  { id: 0, src: './one.jpg' },
-  { id: 1, src: './two.jpg' },
-  { id: 2, src: './three.jpg' },
-  { id: 3, src: './four.jpg' },
-  { id: 4, src: './five.jpg' },
+  require('./one.jpg'),
+  require('./two.jpg'),
+  require('./three.jpg'),
+  require('./four.jpg'),
+  require('./five.jpg'),
 ];
 
 export default class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = { currentIndex: 0 };
-    this.changeImage = this.changeImage.bind(this);
+    this.handleChangeImage = this.handleChangeImage.bind(this);
   }
 
-  changeImage(currentIndex) {
+  handleChangeImage(currentIndex) {
     this.setState({ currentIndex });
   }
   render() {
     return (
       <Wrapper>
-        <MainImage src={require(images[this.state.currentIndex].src)} />
+        <MainImage src={(images[this.state.currentIndex])} />
         <Thumbnails
-          data={images}
-          changeImage={this.changeImage}
+          images={images}
+          handleChangeImage={this.handleChangeImage}
           currentIndex={this.state.currentIndex}
         />
       </Wrapper>

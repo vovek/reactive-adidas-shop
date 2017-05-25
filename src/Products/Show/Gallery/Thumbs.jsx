@@ -25,11 +25,11 @@ const Thumbnail = styled.img`
 
 export default props => (
   <Wrapper>
-    {props.data.map(image => (
+    {props.images.map((image, index) => (
       <Thumbnail
-        key={image.id}
-        src={require(image.src)}
-        onClick={() => props.changeImage(image.id)}
+        key={image}
+        src={image}
+        onClick={() => props.handleChangeImage(index)}
       />
     ))}
   </Wrapper>
