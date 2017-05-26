@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Price = styled.span`
   font-size: 80px;
   font-weight: bold;
-  color: #e2e2e2;
+  color: ${props => props.currentColor};
   margin-top: 1rem;
   line-height: 109px;
   text-align: right;
@@ -12,7 +12,7 @@ const Price = styled.span`
 `;
 
 export default props => (
-  <Price>
+  <Price currentColor={props.currentColor}>
     {props.children}
   </Price>
 );

@@ -13,9 +13,13 @@ const Wrapper = styled.div`
   right: 1rem;
 `;
 
-export default () => (
+export default props => (
   <Wrapper>
-    <Left />
-    <Right />
+    <Left currentColor={props.currentColor} />
+    <Right
+      currentColor={props.currentColor}
+      colors={props.colors}
+      handleChangeColor={props.handleChangeColor}
+    />
   </Wrapper>
 );

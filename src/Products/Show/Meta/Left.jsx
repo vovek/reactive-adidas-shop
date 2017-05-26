@@ -13,15 +13,15 @@ const Title = styled.h1`
 
 const SaveButton = styled.button`
   color: #fff;
+  background-color: ${props => props.currentColor};
   font-family: avenir-next;
   font-weight: bold;
   text-transform: uppercase;
-  background: #e3e3e3;
-  font-size: 18px;
-  line-height: 25px;
-  width: 75px;
-  height: 75px;
-  margin-top: 14px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.5rem;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
@@ -31,9 +31,9 @@ const SaveButton = styled.button`
   }
 `;
 
-export default () => (
-  <Wrapper>
+export default props => (
+  <Wrapper className="test">
     <Title>Easy<br />Boost</Title>
-    <SaveButton>Save</SaveButton>
+    <SaveButton currentColor={props.currentColor}>Save</SaveButton>
   </Wrapper>
 );
