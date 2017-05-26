@@ -8,7 +8,7 @@ import SingleProduct from './Products/Show';
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-basis: 100%;
   height: 100%;
   font-family: avenir-next;
 
