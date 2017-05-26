@@ -13,37 +13,37 @@ export default () => (
   <Wrapper>
     <Row>
       <CardColumn>
-        <Card route="/products/football/shoes/1" isSale />
+        <Card link="/products/football/shoes/1" isSale />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/1" />
+        <Card link="/products/football/shoes/1" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/2" />
+        <Card link="/products/football/shoes/2" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/3" />
+        <Card link="/products/football/shoes/3" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/4" />
+        <Card link="/products/football/shoes/4" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/5" />
+        <Card link="/products/football/shoes/5" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/6" />
+        <Card link="/products/football/shoes/6" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/7" />
+        <Card link="/products/football/shoes/7" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/8" />
+        <Card link="/products/football/shoes/8" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/9" />
+        <Card link="/products/football/shoes/9" />
       </CardColumn>
       <CardColumn>
-        <Card route="/products/football/shoes/10" />
+        <Card link="/products/football/shoes/10" />
       </CardColumn>
     </Row>
   </Wrapper>

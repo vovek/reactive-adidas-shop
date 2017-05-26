@@ -14,12 +14,16 @@ export const Wrapper = styled.nav`
   }
 `;
 
+const LinkWithActive = ({ to, children }) => (
+  <Link activeClassName="active" to={to}>{children}</Link>
+);
+
 export default () => (
   <Wrapper>
     <Menu title="Football">
-      <Link to="/products/football/shoes" activeClassName="selected">Shoes</Link>
-      <Link to="/products/football/clothing" activeClassName="selected">Clothing</Link>
-      <Link to="/products/football/accessorises" activeClassName="selected">Accessories</Link>
+      <LinkWithActive to="/products/football/shoes">Shoes</LinkWithActive>
+      <LinkWithActive to="/products/football/clothing">Clothing</LinkWithActive>
+      <LinkWithActive to="/products/football/accessorises">Accessories</LinkWithActive>
     </Menu>
     <Menu title="Running">
       <Link to="/products/running/shoes" activeClassName="selected">Shoes</Link>

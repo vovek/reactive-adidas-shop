@@ -58,7 +58,7 @@ export const Link = styled(NavLink)`
   &:last-child {
     margin-bottom: 3rem;
   }
-  &.selected {
+  &.active {
     color: #fff;
   }
 `;

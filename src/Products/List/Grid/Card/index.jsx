@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 `;
 
 export default props => (
-  <Link to={props.route}>
+  <Link to={props.link}>
     <Wrapper>
       {props.isSale && <Label><SaleLabel /></Label>}
       <Image src={productImage} />
