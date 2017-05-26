@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import Menu, { Link } from './Menu';
 
 export const Wrapper = styled.nav`
-  display: none;
+  display: ${props => (props.isToggled ? 'block' : 'none')};
   flex-direction: column;
   margin-top: 6em;
+  width:100%;
   text-align: center;
   text-transform: uppercase;
   @media only screen and (min-width: 768px) {
@@ -14,8 +15,8 @@ export const Wrapper = styled.nav`
   }
 `;
 
-export default () => (
-  <Wrapper>
+export default props => (
+  <Wrapper isToggled={props.isToggled}>
     <Menu title="Football">
       <Link to="/">Shoes</Link>
       <Link to="/">Clothing</Link>

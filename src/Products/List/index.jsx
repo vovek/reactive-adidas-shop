@@ -7,7 +7,7 @@ import Grid from './Grid';
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex: 4;
 `;
 
 export default () => (
