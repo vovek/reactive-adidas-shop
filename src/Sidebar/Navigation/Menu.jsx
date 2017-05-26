@@ -58,6 +58,9 @@ export const Link = styled(NavLink)`
   &:last-child {
     margin-bottom: 3rem;
   }
+  &.active {
+    color: #fff;
+  }
 `;
 
 export default class Menu extends React.Component {

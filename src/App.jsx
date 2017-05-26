@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Products from './Products/List';
-import SingleProduct from './Products/Show';
+import Product from './Products/Show';
 
 const Layout = styled.div`
   display: flex;
@@ -22,8 +22,9 @@ function App() {
     <Router>
       <Layout>
         <Sidebar />
-        <Route exact path="/" component={Products} />
-        <Route path="/item" component={SingleProduct} />
+        <Redirect from="/" to="/products/football/shoes" />
+        <Route exact path="/products/:group/:type" component={Products} />
+        <Route exact path="/products/:group/:type/:id" component={Product} />
       </Layout>
     </Router>
   );

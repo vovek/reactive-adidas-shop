@@ -15,22 +15,26 @@ export const Wrapper = styled.nav`
   }
 `;
 
+const LinkWithActive = ({ to, children }) => (
+  <Link activeClassName="active" to={to}>{children}</Link>
+);
+
 export default props => (
   <Wrapper isOpened={props.isOpened}>
     <Menu title="Football">
-      <Link to="/">Shoes</Link>
-      <Link to="/">Clothing</Link>
-      <Link to="/">Accessories</Link>
+      <LinkWithActive to="/products/football/shoes">Shoes</LinkWithActive>
+      <LinkWithActive to="/products/football/clothing">Clothing</LinkWithActive>
+      <LinkWithActive to="/products/football/accessorises">Accessories</LinkWithActive>
     </Menu>
     <Menu title="Running">
-      <Link to="/">Shoes</Link>
-      <Link to="/">Clothing</Link>
-      <Link to="/">Accessories</Link>
+      <Link to="/products/running/shoes" activeClassName="selected">Shoes</Link>
+      <Link to="/products/running/clothing" activeClassName="selected">Clothing</Link>
+      <Link to="/products/running/accessories" activeClassName="selected">Accessories</Link>
     </Menu>
     <Menu title="Basketball">
-      <Link to="/">Shoes</Link>
-      <Link to="/">Clothing</Link>
-      <Link to="/">Accessories</Link>
+      <Link to="/products/basketball/shoes" activeClassName="selected">Shoes</Link>
+      <Link to="/products/basketball/clothing" activeClassName="selected">Clothing</Link>
+      <Link to="/products/basketball/accessories" activeClassName="selected">Accessories</Link>
     </Menu>
   </Wrapper>
 );
