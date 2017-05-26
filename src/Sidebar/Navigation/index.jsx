@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Menu, { Link } from './Menu';
 
 export const Wrapper = styled.nav`
-  display: ${props => (props.isToggled ? 'block' : 'none')};
+  display: ${props => (props.isOpened ? 'block' : 'none')};
   flex-direction: column;
   margin-top: 6em;
   width:100%;
@@ -16,7 +16,7 @@ export const Wrapper = styled.nav`
 `;
 
 export default props => (
-  <Wrapper isToggled={props.isToggled}>
+  <Wrapper isOpened={props.isOpened}>
     <Menu title="Football">
       <Link to="/">Shoes</Link>
       <Link to="/">Clothing</Link>
