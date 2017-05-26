@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import Menu, { Link } from './Menu';
 
 export const Wrapper = styled.nav`
-  display: none;
+  display: ${props => (props.isOpened ? 'block' : 'none')};
   flex-direction: column;
   margin-top: 6em;
+  width:100%;
   text-align: center;
   text-transform: uppercase;
   @media only screen and (min-width: 768px) {
@@ -18,8 +19,8 @@ const LinkWithActive = ({ to, children }) => (
   <Link activeClassName="active" to={to}>{children}</Link>
 );
 
-export default () => (
-  <Wrapper>
+export default (props) => (
+  <Wrapper isOpened={props.isOpened}>
     <Menu title="Football">
       <LinkWithActive to="/products/football/shoes">Shoes</LinkWithActive>
       <LinkWithActive to="/products/football/clothing">Clothing</LinkWithActive>
