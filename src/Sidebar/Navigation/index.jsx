@@ -19,7 +19,7 @@ const LinkWithActive = ({ to, children }) => (
   <Link activeClassName="active" to={to}>{children}</Link>
 );
 
-export default (props) => (
+export default props => (
   <Wrapper isOpened={props.isOpened}>
     <Menu title="Football">
       <LinkWithActive to="/products/football/shoes">Shoes</LinkWithActive>
