@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 `;
 
 export default props => (
-  <Link to={props.link}>
+  <Link to={props.href}>
     <Wrapper>
       {props.isSale && <Label><SaleLabel /></Label>}
       <Image src={productImage} />
