@@ -34,8 +34,8 @@ export default class Show extends React.Component {
     return (
       <Wrapper>
         <Meta
+          color={colors[this.state.colorIndex]}
           colors={colors}
-          colorIndex={this.state.colorIndex}
           handleChangeColor={this.handleChangeColor}
         />
         <Gallery />

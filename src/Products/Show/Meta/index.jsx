@@ -13,9 +13,14 @@ const Wrapper = styled.div`
   right: 1rem;
 `;
 
-export default ({ colors, colorIndex, handleChangeColor }) => (
+export default ({ color, colors, colorIndex, handleChangeColor }) => (
   <Wrapper>
-    <Left color={colors[colorIndex]} />
-    <Right colorIndex={colorIndex} colors={colors} handleChangeColor={handleChangeColor} />
+    <Left color={color} />
+    <Right
+      colorIndex={colorIndex}
+      colors={colors}
+      handleChangeColor={handleChangeColor}
+      color={color}
+    />
   </Wrapper>
 );

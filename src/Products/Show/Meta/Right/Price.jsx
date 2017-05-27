@@ -11,8 +11,8 @@ const Price = styled.span`
   align-self: flex-end;
 `;
 
-export default ({ colors, colorIndex, children }) => (
-  <Price color={colors[colorIndex]}>
+export default ({ color, children }) => (
+  <Price color={color}>
     {children}
   </Price>
 );
