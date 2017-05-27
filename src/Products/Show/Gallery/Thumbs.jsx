@@ -13,10 +13,14 @@ const Thumbnail = styled.img`
   max-height: 5rem;
   width: auto;
   margin-right: 1rem;
-  border: 2px solid #e5e5e5;
+  ${props => props.isSelected && 'outline: 5px solid #e8e8ea;'}
+  &:hover {
+    outline: 5px solid #e8e8ea;
+  }
   &:last-child {
     margin-right: 0;
   }
+  
 `;
 
 export default props => (
@@ -25,6 +29,7 @@ export default props => (
       <Thumbnail
         key={image}
         src={image}
+        isSelected={props.currentIndex === index}
         onClick={() => props.handleChangeImage(index)}
       />
     ))}

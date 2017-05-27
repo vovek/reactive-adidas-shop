@@ -17,11 +17,11 @@ const Label = styled(LabelLayout)`
   padding: 0 1rem;
 `;
 
-export default () => (
+export default ({ color, colors, handleChangeColor }) => (
   <Wrapper>
-    <ColorSwitcher colors={['red', 'blue', 'green', 'black', 'yellow']}>
+    <ColorSwitcher colors={colors} handleChangeColor={handleChangeColor}>
       <Label><SaleLabel /></Label>
     </ColorSwitcher>
-    <Price>$170</Price>
+    <Price color={color}>$170</Price>
   </Wrapper>
 );
