@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.p`
   font-size: 33px;
   line-height: 1.5;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   text-transform: none;
   font-weight: normal;
