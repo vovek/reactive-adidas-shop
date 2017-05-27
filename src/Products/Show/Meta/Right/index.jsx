@@ -17,7 +17,7 @@ const Label = styled(LabelLayout)`
   padding: 0 1rem;
 `;
 
-export default ({ color, colorIndex, colors, handleChangeColor }) => (
+export default ({ color, colors, handleChangeColor }) => (
   <Wrapper>
     <ColorSwitcher colors={colors} handleChangeColor={handleChangeColor}>
       <Label><SaleLabel /></Label>
