@@ -22,12 +22,12 @@ const colors = ['#c5c5c5', '#4d87ca', '#4a4a4a', '#3D9970', '#85144b'];
 export default class Show extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentColor: colors[0] };
+    this.state = { colorIndex: 0 };
     this.handleChangeColor = this.handleChangeColor.bind(this);
   }
 
-  handleChangeColor(currentColor) {
-    this.setState({ currentColor });
+  handleChangeColor(colorIndex) {
+    this.setState({ colorIndex });
   }
 
   render() {
@@ -35,7 +35,7 @@ export default class Show extends React.Component {
       <Wrapper>
         <Meta
           colors={colors}
-          currentColor={this.state.currentColor}
+          colorIndex={this.state.colorIndex}
           handleChangeColor={this.handleChangeColor}
         />
         <Gallery />

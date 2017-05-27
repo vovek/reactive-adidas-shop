@@ -13,13 +13,9 @@ const Wrapper = styled.div`
   right: 1rem;
 `;
 
-export default props => (
+export default ({ colors, colorIndex, handleChangeColor }) => (
   <Wrapper>
-    <Left currentColor={props.currentColor} />
-    <Right
-      currentColor={props.currentColor}
-      colors={props.colors}
-      handleChangeColor={props.handleChangeColor}
-    />
+    <Left color={colors[colorIndex]} />
+    <Right colorIndex={colorIndex} colors={colors} handleChangeColor={handleChangeColor} />
   </Wrapper>
 );

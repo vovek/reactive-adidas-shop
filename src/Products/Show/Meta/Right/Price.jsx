@@ -4,15 +4,15 @@ import styled from 'styled-components';
 const Price = styled.span`
   font-size: 80px;
   font-weight: bold;
-  color: ${props => props.currentColor};
+  color: ${props => props.color};
   margin-top: 1rem;
   line-height: 109px;
   text-align: right;
   align-self: flex-end;
 `;
 
-export default props => (
-  <Price currentColor={props.currentColor}>
-    {props.children}
+export default ({ colors, colorIndex, children }) => (
+  <Price color={colors[colorIndex]}>
+    {children}
   </Price>
 );

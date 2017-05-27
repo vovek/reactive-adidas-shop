@@ -14,7 +14,7 @@ const SwitchButton = styled.button`
   border: 0;
   margin-right: 18px;
   box-sizing: content-box;
-  background-color: ${props => props.currentColor};
+  background-color: ${props => props.color};
   border-radius: 50%;
   cursor: pointer;
   &:last-child {
@@ -23,23 +23,16 @@ const SwitchButton = styled.button`
   &:hover,
   &:focus {
     outline: 0;
-    background-color: ${props => props.currentColor};
+    background-color: ${props => props.color};
 
   }
 `;
 
-export default (props) => {
-  const switchers = props.colors.map(color => (
-    <SwitchButton
-      key={color.toString()}
-      currentColor={color}
-      onClick={() => props.handleChangeColor(color)}
-    />
-  ));
-  return (
-    <Wrapper>
-      {switchers}
-      {props.children}
-    </Wrapper>
-  );
-};
+export default ({ colors, handleChangeColor, children }) => (
+  <Wrapper>
+    {colors.map((color, index) => (
+      <SwitchButton key={color} color={colors[index]} onClick={() => handleChangeColor(index)} />
+    ))}
+    {children}
+  </Wrapper>
+);
