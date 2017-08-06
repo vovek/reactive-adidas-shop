@@ -19,8 +19,12 @@ const Button = styled.button`
   cursor: pointer;
   width: 100%;
 
-  
   @media only screen and (min-width: 768px) {
+    margin-left: 327px;
+    width: calc(100% - 327px);
+  }
+
+  @media only screen and (min-width: 1200px) {
     margin-left: 414px;
     width: calc(100% - 414px);
   }

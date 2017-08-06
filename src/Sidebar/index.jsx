@@ -20,13 +20,13 @@ const Wrapper = styled.aside`
   @media only screen and (min-width: 768px) {
     align-items: center;
     justify-content: flex-start;
-    min-width: 300px;
+    flex: 0 0 327px;
     padding: 1.5rem 1rem;
     height: auto;
   }
 
   @media only screen and (min-width: 1200px) {
-    
+    flex: 0 0 414px;
   }
   
 `;

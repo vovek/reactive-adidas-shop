@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  flex: 2 100%;
+  flex-basis: 100%;
   align-items: center;
   padding: 1rem;
 `;

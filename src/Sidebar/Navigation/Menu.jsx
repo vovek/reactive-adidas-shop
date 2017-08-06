@@ -56,7 +56,7 @@ export const Link = styled(NavLink)`
     color: #fff;
   }
   &:last-child {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   &.active {
     color: #fff;

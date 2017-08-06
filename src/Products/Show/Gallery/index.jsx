@@ -11,7 +11,9 @@ const Wrapper = styled.div`
 `;
 
 const MainImage = styled.img` 
+  width: 80%;
   height: auto;
+  margin: 0 auto;
 `;
 
 const images = [
@@ -19,7 +21,6 @@ const images = [
   require('./two.jpg'),
   require('./three.jpg'),
   require('./four.jpg'),
-  require('./five.jpg'),
 ];
 
 export default class Gallery extends React.Component {
